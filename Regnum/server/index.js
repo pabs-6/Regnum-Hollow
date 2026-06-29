@@ -41,17 +41,13 @@ app.get('/api/test', (req, res) => {
 });
 
 if (!process.env.VERCEL) {
-    async function startServer() {
-        try {
-            await connectDB();
-            app.listen(PORT, () => {
-                console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
-            });
-        } catch (error) {
-            console.error(error);
-        }
-    }
-    startServer();
+    app.listen(PORT, () => {
+        console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+        // Conectar a la base de datos en segundo plano para no bloquear el arranque
+        connectDB().catch(error => {
+            console.error('❌ Error inicial al conectar a MongoDB:', error);
+        });
+    });
 }
 
 module.exports = app;
