@@ -140,17 +140,6 @@ Este proyecto se ha desarrollado utilizando tecnologías web modernas:
 * **Backend:** Node.js, Express, MongoDB (para base de datos y estadísticas), nodemon.
 * **Internacionalización:** i18next (soporte multilenguaje).
 * **Servicios de Imagen:** Cloudinary (almacenamiento y hosting de las ilustraciones de las cartas).
-
----
-
-## 👥 Créditos y Autores
-
-Este proyecto ha sido realizado por:
-* **Pablo Serrano:** Desarrollo de la interfaz gráfica y Frontend.
-* **Antonio Pérez:** Desarrollo del Backend y API.
-* **Ismael Gil:** Modelos de Inteligencia Artificial para las ilustraciones de las cartas y apoyo general y supervisión en Frontend y Backend.
-* **Iker Clemente:** Diseño y desarrollo de los sonidos, música de la aplicación y gestión de la nube. Supervisión general del proyecto, director general y control de versiones/ramas.
-
 ---
 
 *Desarrollado como Proyecto Final Cliente-Servidor.*  
